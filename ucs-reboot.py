@@ -41,7 +41,6 @@ try:
         choice = raw_input().lower()
         if choice == 'y':
             print "Rebooting servers."
-            print mo_dn_array.iteritems()
             for mo,dn in mo_dn_array.items():
                 powerclass = dn + "/power"
                 handle.SetManagedObject(mo, LsPower.ClassId(), {LsPower.DN:dn + "/power", LsPower.STATE:"cycle-immediate"}, False)
