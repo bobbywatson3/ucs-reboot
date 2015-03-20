@@ -9,7 +9,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-s', '--service-profile-wildcard', required=True, help="Wildcard match for any service profile names that contain this string")
 parser.add_argument('-l', '--login', default='admin', help="Login for UCS Manager. Default is 'admin'.")
 parser.add_argument('-p', '--password', help="Password for UCS Manager.")
-parser.add_argument('-u', '--ucs', help="Hostname or IP address of UCS Manager") # TODO make this work with multiple UCS IP's
+parser.add_argument('-u', '--ucs', required=True, help="Hostname or IP address of UCS Manager") # TODO make this work with multiple UCS IP's
 
 args = parser.parse_args()
 
