@@ -37,7 +37,7 @@ try:
     for server in service_profiles:
         print server 
     while True:
-        sys.stdout.write('Hard reboot servers? [y/n] ')
+        sys.stdout.write('Reboot servers? [y/n] ')
         choice = raw_input().lower()
         if choice == 'y':
             print "Rebooting servers."
