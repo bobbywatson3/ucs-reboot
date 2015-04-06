@@ -34,6 +34,7 @@ try:
             mo_dn_array[mo] = origDn
     
     print "The following service profiles will be rebooted:"
+    service_profiles.sort()
     for server in service_profiles:
         print server 
     while True:
